@@ -1,0 +1,123 @@
+/* Basic resets and font imports can go here */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Top nav styles (just for the example) */
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 2rem;
+    border-bottom: 1px solid #eaeaea;
+    height: 64px;
+}
+
+.logo a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #000;
+}
+
+/* Main container for the transition choice */
+.transition-choice-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Card container styles */
+.transition-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Individual card styling */
+.transition-card {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    width: 280px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transition-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-content {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* "View" button styling */
+.view-button {
+    border: none;
+    background-color: #fff;
+    color: #4a67f2;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: right;
+    margin: 0 1rem 1rem auto;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-end;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-button:hover {
+    background-color: #f0f3ff;
+    color: #3a53e4;
+}
